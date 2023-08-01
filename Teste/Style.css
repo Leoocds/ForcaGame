@@ -127,6 +127,35 @@ p {
   body {
     font-size: 14px;
   }
+
+  #controle button {
+  width: 50px;
+  height: 30px;
+  font-size: 24px;
+  margin: 5px 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #1eff00;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  }
+
+  .teclas button {
+  width: 30px;
+  height: 30px; 
+  text-align: center;
+  margin: 5px 5px;
+  font-size: 24px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #1eff00;
+  cursor: pointer;
+  font-family: "Teclado";
+  font-weight: bold;
+  text-shadow: -2px 2px #000;
+  color: #ffffff;
+  transition: transform 0.4s ease;
+  }
 }
   
   
