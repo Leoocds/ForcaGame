@@ -14,10 +14,46 @@
     <div id="words" class="words"></div>
     <div id="attempts" class="attempts"></div>
     <div id="wrong" class="wrong">Letras erradas:</div>
-    <input type="text" id="letter" maxlength="1" pattern="[A-Za-z]">
+    <div id="teclado" class="teclado">
+      <div id="teclas" class="teclas">
+        <button onclick="selecionarLetra('a')">A</button>
+        <button onclick="selecionarLetra('b')">B</button>
+        <button onclick="selecionarLetra('c')">C</button>
+        <button onclick="selecionarLetra('d')">D</button>
+        <button onclick="selecionarLetra('e')">E</button>
+        <button onclick="selecionarLetra('f')">F</button>
+        <button onclick="selecionarLetra('g')">G</button>
+        <button onclick="selecionarLetra('h')">H</button>
+        <button onclick="selecionarLetra('i')">I</button>
+      </div>
+
+    <div id="teclas" class="teclas">
+        <button onclick="selecionarLetra('j')">J</button>
+        <button onclick="selecionarLetra('k')">K</button>
+        <button onclick="selecionarLetra('l')">L</button>
+        <button onclick="selecionarLetra('m')">M</button>
+        <button onclick="selecionarLetra('n')">N</button>
+        <button onclick="selecionarLetra('o')">O</button>
+        <button onclick="selecionarLetra('p')">P</button>
+        <button onclick="selecionarLetra('q')">Q</button>
+        <button onclick="selecionarLetra('r')">R</button>
+    </div>
+        
+    <div id="teclas" class="teclas">  
+        <button onclick="selecionarLetra('s')">S</button>
+        <button onclick="selecionarLetra('t')">T</button>
+        <button onclick="selecionarLetra('u')">U</button>
+        <button onclick="selecionarLetra('v')">V</button>
+        <button onclick="selecionarLetra('w')">W</button>
+        <button onclick="selecionarLetra('x')">X</button>
+        <button onclick="selecionarLetra('y')">Y</button>
+        <button onclick="selecionarLetra('z')">Z</button>
+    </div>
+    <div id="controle">
+        <button onclick="reiniciarJogo('🎮')">🎮</button>
+    </div>
+    </div>
     <div id="category" class="category">Categoria: </div>
-    <button id="try" onclick="verificarLetra()">Tentar</button>
-    <button id="restart" onclick="reiniciarJogo()">Reiniciar Jogo</button>
   </div>
 
   <script src="Script.js"></script>
