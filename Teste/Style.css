@@ -78,7 +78,7 @@ p {
   color: #fff;
 }
 
-#buttontry {
+#try {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "Jogo";
@@ -90,7 +90,7 @@ p {
   margin-right: 10px;
 }
 
-#buttonrestart {
+#restart {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "Jogo";
