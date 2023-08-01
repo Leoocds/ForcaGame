@@ -146,7 +146,7 @@ p {
   .teclas button {
   width: 30px;
   height: 30px; 
-  padding: 10px;
+  padding-bottom: 10px;
   text-align: center;
   margin: 5px 5px;
   font-size: 24px;
