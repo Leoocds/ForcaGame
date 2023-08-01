@@ -78,7 +78,7 @@ p {
   color: #fff;
 }
 
-.buttons button {
+#buttonTry {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "Jogo";
@@ -87,13 +87,25 @@ p {
   cursor: pointer;
   border-radius: 8px;
   border: 2px solid #000;
-  transform: scale(1.8);
-  margin-right: 30px;
+  margin-right: 10px;
+}
+
+#buttonRestart {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Jogo";
+  background-color: #2bff00;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin-right: 10px;
 }
 
 .buttons button:hover {
   background-color: blue;
   color: #fff;
+  transform: scale(1.4);
 }
 
 @media screen and (max-width: 782px) {
