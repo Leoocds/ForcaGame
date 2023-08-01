@@ -5,7 +5,7 @@ Jogo da Forca
 Descrição
 O Jogo da Forca é uma versão digital do jogo clássico onde o jogador tenta adivinhar uma palavra, letra por letra, antes que suas tentativas se esgotem e o desenho do enforcado seja concluído. O jogo foi desenvolvido em JavaScript, HTML e CSS, e pode ser jogado diretamente no navegador.
 
-Como Jogar
+<span>Como Jogar<span>
 Ao iniciar o jogo, uma palavra aleatória será escolhida dentro de uma das seguintes categorias: animais, frutas ou profissões.
 
 O jogador deve digitar uma letra no campo de texto e clicar no botão "Tentar" para fazer um palpite.
