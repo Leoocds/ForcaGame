@@ -88,6 +88,7 @@ p {
   border-radius: 8px;
   border: 2px solid #000;
   margin-right: 10px;
+  transition: transform 0.2s ease;
 }
 
 #restart {
@@ -100,12 +101,12 @@ p {
   border-radius: 8px;
   border: 2px solid #000;
   margin-right: 20px;
+  transition: transform 0.2s ease;
 }
 
 button:hover {
   background-color: #0026ff;
-  color: #fff;
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 782px) {
