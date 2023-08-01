@@ -78,7 +78,7 @@ p {
   color: #fff;
 }
 
-button {
+.buttons button {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "Jogo";
@@ -90,7 +90,7 @@ button {
   transform:scale(1.3);
 }
 
-button:hover {
+.buttons button:hover {
   background-color: blue;
   color: #fff;
 }
