@@ -104,7 +104,7 @@ p {
   transition: transform 0.2s ease;
 }
 
-try:hover {
+#try:hover {
   background-color: #0026ff;
   transform: scale(1.2);
 }
