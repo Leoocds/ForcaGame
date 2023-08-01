@@ -1,7 +1,7 @@
 const palavrasPorCategoria = {
-  Animais: ["cachorro", "gato", "macaco", "leao", "girafa"],
-  Frutas: ["banana", "maça", "laranja", "uva", "morango"],
-  Profissões: ["desenvolvedor", "farmaceutica", "professor", "administraçao", "faxineira"],
+  animais: ["cachorro", "gato", "macaco", "leao", "girafa"],
+  frutas: ["banana", "maça", "laranja", "uva", "morango"],
+  profissoes: ["desenvolvedor", "farmaceutica", "professor", "administraçao", "faxineira"],
 };
 
 let categoriaEscolhida = "";
@@ -13,9 +13,9 @@ const maxTentativas = 6;
 
 const palavraDiv = document.getElementById("words");
 const tentativasDiv = document.getElementById("attempts");
-const letraInput = document.getElementById("letter");
 const forcaImg = document.getElementById("forca-img");
 const letrasErradasDiv = document.getElementById("wrong");
+const teclado = document.getElementById("teclado");
 
 function escolherCategoriaAleatoria() {
   const categorias = Object.keys(palavrasPorCategoria);
@@ -56,13 +56,12 @@ function exibirLetrasErradas() {
   }
 }
 
-function exibirTentativasRestantes() {
-  const tentativasRestantes = maxTentativas - tentativas;
-  tentativasDiv.textContent = `Tentativas restantes: ${tentativasRestantes}`;
+function selecionarLetra(letra) {
+  verificarLetra(letra);
 }
 
-function verificarLetra() {
-  const letra = letraInput.value.toLowerCase();
+function verificarLetra(letra) {
+  letra = letra.toLowerCase();
   if (!letra.match(/[a-z]/)) {
     alert("Digite apenas uma letra válida.");
     return;
@@ -81,19 +80,28 @@ function verificarLetra() {
     forcaImg.style.background = `url('Imagem/forca-${tentativas}.png')`;
   }
 
+  tentativasDiv.textContent = `Tentativas restantes: ${maxTentativas - tentativas}`;
+
   exibirPalavra();
   exibirLetrasErradas();
-  exibirTentativasRestantes(); 
-  letraInput.value = "";
+  atualizarJogo();
+}
 
-  if (tentativas === maxTentativas) {
+function atualizarJogo() {
+  if (letrasErradas.size >= maxTentativas) {
     alert("Você perdeu! A palavra era: " + palavraEscolhida);
     forcaImg.style.background = `url('Imagem/forca-${maxTentativas}.png')`;
-    letraInput.disabled = true;
+    desabilitarTeclado();
   } else if (!palavraDiv.textContent.includes("_")) {
     alert("Parabéns! Você acertou a palavra: " + palavraEscolhida);
-    letraInput.disabled = true; 
+    desabilitarTeclado();
   }
+}
+
+function desabilitarTeclado() {
+  teclado.querySelectorAll("button").forEach((button) => {
+    button.disabled = true;
+  });
 }
 
 function reiniciarJogo() {
@@ -104,20 +112,20 @@ function reiniciarJogo() {
   letrasErradas.clear();
   tentativas = 0;
   forcaImg.style.background = "url('Imagem/Forca.png')";
-  letraInput.disabled = false;
+  teclado.querySelectorAll("button").forEach((button) => {
+    button.disabled = false;
+  });
 
   exibirPalavra();
   exibirLetrasErradas();
   tentativasDiv.textContent = `Tentativas restantes: ${maxTentativas}`;
   exibirCategoria();
-  exibirTentativasRestantes();
   letraInput.value = "";
 }
 
 exibirCategoria();
 exibirPalavra();
 exibirLetrasErradas();
-exibirTentativasRestantes();
 reiniciarJogo();
 tentativasDiv.textContent = `Tentativas restantes: ${maxTentativas}`;
 
