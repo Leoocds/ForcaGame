@@ -133,7 +133,8 @@ p {
   #controle button {
   width: 50px;
   height: 30px;
-  padding: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
   font-size: 24px;
   margin: 5px 5px;
   border: 1px solid #000;
@@ -146,7 +147,8 @@ p {
   .teclas button {
   width: 30px;
   height: 30px; 
-  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
   text-align: center;
   margin: 5px 5px;
   font-size: 24px;
