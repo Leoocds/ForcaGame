@@ -86,7 +86,7 @@ button {
   cursor: pointer;
   border-radius: 8px;
   border-width: 2px;
-  border-color: #000;
+  border-color: #000000;
 }
 
 @media screen and (max-width: 782px) {
