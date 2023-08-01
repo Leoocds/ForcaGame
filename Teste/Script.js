@@ -91,17 +91,9 @@ function atualizarJogo() {
   if (letrasErradas.size >= maxTentativas) {
     alert("Você perdeu! A palavra era: " + palavraEscolhida);
     forcaImg.style.background = `url('Imagem/forca-${maxTentativas}.png')`;
-    desabilitarTeclado();
   } else if (!palavraDiv.textContent.includes("_")) {
     alert("Parabéns! Você acertou a palavra: " + palavraEscolhida);
-    desabilitarTeclado();
   }
-}
-
-function desabilitarTeclado() {
-  teclado.querySelectorAll("button").forEach((button) => {
-    button.disabled = true;
-  });
 }
 
 function reiniciarJogo() {
