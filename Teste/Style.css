@@ -99,11 +99,11 @@ p {
   cursor: pointer;
   border-radius: 8px;
   border: 2px solid #000;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 button:hover {
-  background-color: blue;
+  background-color: #0026ff;
   color: #fff;
   transform: scale(1.4);
 }
