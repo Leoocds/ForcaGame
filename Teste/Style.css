@@ -40,14 +40,14 @@ p {
 .words {
   font-family: "Jogo";
   color: #fff;
-  margin: 30px auto;
+  margin: 25px auto;
   font-size: 30px;
 }
 
 .wrong {
   font-family: "Palavras";
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 22px;
   color: #fff;
   text-shadow: -1px 3px 0 black;
@@ -57,7 +57,7 @@ p {
   font-family: "Palavras";
   font-weight: bold;
   color: #fff;
-  margin: 10px auto;
+  margin: 5px auto;
   font-size: 22px;
   text-shadow: -1px 3px 0 black;
 }
