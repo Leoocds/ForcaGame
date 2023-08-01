@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+  <div class="container">
+    <p>Jogo da Forca</p>
+    <div id="forca-img" class="forca-img"></div>
+    <div id="words" class="words"></div>
+    <div id="attempts" class="attempts"></div>
+    <div id="wrong" class="wrong">Letras erradas:</div>
+    <input type="text" id="letter" maxlength="1" placeholder="A" pattern="[A-Za-z]">
+    <div id="category" class="category">Categoria: </div>
+    <button onclick="verificarLetra()">Tentar</button>
+    <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
+
