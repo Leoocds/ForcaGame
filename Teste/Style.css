@@ -78,7 +78,7 @@ p {
   color: #fff;
 }
 
-#buttonTry {
+#buttontry {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "Jogo";
@@ -90,7 +90,7 @@ p {
   margin-right: 10px;
 }
 
-#buttonRestart {
+#buttonrestart {
   padding: 10px 20px;
   font-size: 16px;
   font-family: "Jogo";
@@ -102,7 +102,7 @@ p {
   margin-right: 10px;
 }
 
-.buttons button:hover {
+button:hover {
   background-color: blue;
   color: #fff;
   transform: scale(1.4);
