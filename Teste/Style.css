@@ -84,8 +84,8 @@ button {
   background-color: #2bff00;
   color: #fff;
   cursor: pointer;
-  border-radius: 10px;
-  border-size: 2px;
+  border-radius: 8px;
+  border-width: 2px;
   border-color: #000;
 }
 
