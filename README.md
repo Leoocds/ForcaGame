@@ -1,6 +1,7 @@
 # ForcaGame
 
 **Descrição**
+
 O Jogo da Forca é uma versão digital do jogo clássico onde o jogador tenta adivinhar uma palavra, letra por letra, antes que suas tentativas se esgotem e o desenho do enforcado seja concluído. O jogo foi desenvolvido em JavaScript, HTML e CSS, e pode ser jogado diretamente no navegador.
 
 **Como Jogar**
