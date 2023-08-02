@@ -1,7 +1,7 @@
 const palavrasPorCategoria = {
   animais: ["cachorro", "gato", "macaco", "leao", "girafa"],
-  frutas: ["banana", "maça", "laranja", "uva", "morango"],
-  profissoes: ["desenvolvedor", "farmaceutica", "professor", "administraçao", "faxineira"],
+  frutas: ["banana", "maca", "laranja", "uva", "morango"],
+  profissoes: ["desenvolvedor", "farmaceutica", "professor", "administracao", "faxineira"],
 };
 
 let categoriaEscolhida = "";
