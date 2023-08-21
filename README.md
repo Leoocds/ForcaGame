@@ -23,7 +23,7 @@ O jogo termina quando o jogador acertar a palavra ou quando suas tentativas se e
 **Como Executar**
 
 Para jogar o Jogo da Forca, basta clonar este repositório e abrir o arquivo index.html em qualquer navegador web.
-git clone https://github.com/seu-usuario/jogo-da-forca.git
+git clone https://github.com/LeleoLP/jogo-da-forca.git
 cd jogo-da-forca
 
 
@@ -34,9 +34,9 @@ Se você gostaria de contribuir com o projeto, sinta-se à vontade para abrir um
 
 
 **Tecnologias Utilizadas**
-HTML
-CSS
-JavaScript
+HTML,
+CSS,
+JavaScript,
 
 
 
